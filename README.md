@@ -9,13 +9,13 @@
 ## How to Use
 
 ```python
-import mcsvrstatAPI # if this does not work, please check sol#1
+import mcsrvstatAPI # if this does not work, please check sol#1
 
 # sol#1
 import importlib
-api = importlib.import_module('mcsvrstatAPI') # msut be in the same directory!
+api = importlib.import_module('mcsrvstatAPI') # msut be in the same directory!
 
-# create mcsvrstatAPI object
+# create mcsrvstatAPI object
 mcsrv = api.mcserverstatus()
 
 server = "mc.hypixel.net"
