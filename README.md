@@ -34,3 +34,6 @@ print("Players: "+ str(mcsrv.getPlayers(server, 'online')) + "/" + str(mcsrv.get
 # Get the MOTD of the server
 print("MOTD: " + mcsrv.getMotd(server, 'html'))
 ```
+
+## Documentation
+Coming Soon!
