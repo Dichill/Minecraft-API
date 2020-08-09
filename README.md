@@ -1,4 +1,4 @@
-# Minecraft API
+# mcsrvstat API | Get Minecraft Server Status
 
 ## Features
 
