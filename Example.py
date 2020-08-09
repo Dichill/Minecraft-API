@@ -1,3 +1,5 @@
+#author Dichill
+
 import importlib
 api = importlib.import_module('mcsrvstatAPI')
 
