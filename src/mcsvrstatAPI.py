@@ -67,6 +67,3 @@ class mcserverstatus:
     def getIP(self, server):
         a = self.api(server)['ip']
         return str(a)
-
-
-
