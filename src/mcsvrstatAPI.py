@@ -34,20 +34,20 @@ class mcserverstatus:
 
     def getMotd(self, server, option):
         a = self.api(server)['motd']
-        if option == 'raw' or 'Raw':
+        if option.casefold() == "raw"
             return str(a['raw'])
-        elif option == 'clean' or 'Clean':
+        elif option.casefold() == "clean":
             return str(a['clean'])
-        elif option == 'html' or 'Html':
+        elif option.casefold() == "html":
             return str(a['html'])
         else:
             return print("Error | Format must be getMotd(server, option) e.g getMotd('invadedlands.net', 'raw') gets the motd in raw text | getMotd('invadedlands.net', 'clean') gets the motd in clean text | getMotd('invadedlands.net', 'html') gets the motd in html format")
 
     def getPlayers(self, server, option):
         a = self.api(server)['players']
-        if option == 'online' or 'Online':
+        if option.casefold() == "online":
             return a['online']
-        elif option == 'max' or 'Max':
+        elif option.casefold() == "max":
             return a['max']
         else:
             return print("Error | Format must be getPlayers(server, option) e.g getPlayers('invadedlands.net', 'max') gets the max numbers of allowed players in a server, getPlayers('invadedlands.net', 'online') gets the online numbers of players in the server")
